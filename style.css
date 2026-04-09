@@ -133,6 +133,10 @@ html {
     }
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* Responsivo — ajuste de hero em mobile */
 @media (max-width: 640px) {
     section#hero h1 {
