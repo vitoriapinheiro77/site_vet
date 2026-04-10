@@ -45,22 +45,30 @@
                 <img src="img/logo.png" alt="Logo Animal Way" class="h-18 md:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105">
             </a>
 
-            <div class="hidden md:flex items-center space-x-10">
+            <div class="hidden md:flex items-center space-x-8">
                 <a href="#sobre"       class="nav-link-modern text-sm font-bold uppercase tracking-[0.18em] text-[#445159] hover:text-[#A8C0B4] transition-colors duration-200">Sobre</a>
-                <a href="#servicos"    class="nav-link-modern text-sm font-bold uppercase tracking-[0.18em] text-[#445159] hover:text-[#A8C0B4] transition-colors duration-200">Serviços</a>
+                <a href="#servicos"     class="nav-link-modern text-sm font-bold uppercase tracking-[0.18em] text-[#445159] hover:text-[#A8C0B4] transition-colors duration-200">Serviços</a>
                 <a href="#localizacao" class="nav-link-modern text-sm font-bold uppercase tracking-[0.18em] text-[#445159] hover:text-[#A8C0B4] transition-colors duration-200">Localização</a>
-                <a href="#contato"     class="nav-link-modern text-sm font-bold uppercase tracking-[0.18em] text-[#445159] hover:text-[#A8C0B4] transition-colors duration-200">Contato</a>
+                <a href="#avaliacoes"  class="nav-link-modern text-sm font-bold uppercase tracking-[0.18em] text-[#445159] hover:text-[#A8C0B4] transition-colors duration-200">Avaliações</a>
+                
+                <a href="#emergencia" class="flex items-center gap-2 text-sm font-black uppercase tracking-[0.18em] text-red-600 hover:scale-105 transition-transform duration-200">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-600"></span>
+                    </span>
+                    Emergência
+                </a>
             </div>
 
             <div class="hidden md:flex items-center">
-                     <a href="https://wa.me/5521997297742"
-                         target="_blank"
-                         class="text-[#2e3f47] px-7 py-2.5 rounded-full text-xs font-black uppercase tracking-[0.16em] transition-all duration-300 hover:bg-[#2e3f47] hover:text-white"
-                         style="background-color: #A8C0B4;"> Agendar Consulta
-                     </a>
+                 <a href="https://wa.me/5521997297742"
+                    target="_blank"
+                    class="text-[#2e3f47] px-7 py-2.5 rounded-full text-xs font-black uppercase tracking-[0.16em] transition-all duration-300 hover:bg-[#2e3f47] hover:text-white"
+                    style="background-color: #A8C0B4;"> Agendar Consulta
+                 </a>
             </div>
 
-            <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 rounded-lg" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 rounded-lg" aria-label="Abrir menu">
                 <span class="menu-line block w-7 h-0.5" style="background-color: #445159;"></span>
                 <span class="menu-line block w-7 h-0.5" style="background-color: #445159;"></span>
                 <span class="menu-line block w-7 h-0.5" style="background-color: #445159;"></span>
@@ -69,10 +77,12 @@
 
         <div id="mobile-menu" class="hidden md:hidden mt-3 rounded-2xl border border-[#445159]/10 bg-[#f0f4f3] shadow-lg p-4">
             <div class="flex flex-col">
-                <a href="#sobre" class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Sobre</a>
-                <a href="#servicos" class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Serviços</a>
+                <a href="#sobre"       class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Sobre</a>
+                <a href="#servicos"     class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Serviços</a>
                 <a href="#localizacao" class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Localização</a>
-                <a href="#contato" class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Contato</a>
+                <a href="#avaliacoes"  class="py-3 px-2 text-sm font-bold uppercase tracking-[0.14em] text-[#445159] hover:text-[#A8C0B4] transition-colors">Avaliações</a>
+                <a href="#emergencia"  class="py-3 px-2 text-sm font-black uppercase tracking-[0.14em] text-red-600 transition-colors">Emergência 24h</a>
+                
                 <a href="https://wa.me/5521997297742" target="_blank" class="mt-3 inline-flex justify-center text-[#2e3f47] px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-[0.14em] transition-all duration-300 hover:bg-[#2e3f47] hover:text-white" style="background-color: #A8C0B4;">
                     Agendar Consulta
                 </a>
@@ -85,12 +95,11 @@
 
         <!-- ========== HERO ========== -->
         <section id="hero" class="relative w-full min-h-screen flex items-center justify-center text-center overflow-hidden" 
-    style="background: linear-gradient(rgba(46, 63, 71, 0.75), rgba(46, 63, 71, 0.75)), url('img/telao.jpg') no-repeat center center; background-size: cover;">
+    style="background: linear-gradient(rgba(46, 63, 71, 0.7), rgba(46, 63, 71, 0.7)), url('img/sala.JPEG') no-repeat center center; background-size: cover;">
     
     <div class="max-w-7xl mx-auto px-6 z-10 py-32">
         <div class="flex items-center justify-center gap-2 mb-6">
-            <span class="text-[#A8C0B4]">🐾</span>
-            <span class="text-white/80 font-bold uppercase tracking-[0.3em] text-xs">Centro Veterinário — Maricá, RJ</span>
+            <span class="text-white/80 font-bold uppercase tracking-[0.3em] text-xs">Atuando há 20 anos em Maricá</span>
         </div>
         
         <h1 class="font-heading text-6xl md:text-8xl font-black text-white leading-tight mb-4">
@@ -100,60 +109,46 @@
         
         <div class="w-16 h-0.5 bg-[#A8C0B4]/50 mx-auto mb-8"></div>
         
-        <p class="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed tracking-wide">
-            Cuidado especializado, carinho verdadeiro.<br>
-            Porque seu pet merece o melhor.
+        <p class="text-white/90 text-lg md:text-xl font-light max-w-3xl mx-auto leading-relaxed tracking-wide">
+            Referência em ortopedia veterinária, com equipe especializada, estrutura e atendimento completo para a saúde do seu pet.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <a href="https://wa.me/5521997297742" class="text-[#2e3f47] px-9 py-3.5 rounded-full text-sm font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-white shadow-lg flex items-center justify-center gap-2" style="background-color: #A8C0B4;">
-                Agendar via WhatsApp
+        <div class="flex flex-col sm:flex-row gap-6 justify-center mt-12">
+            <a href="https://wa.me/5521997297742" class="text-[#2e3f47] px-10 py-4 rounded-full font-black uppercase tracking-widest hover:scale-105 transition-all shadow-2xl flex items-center justify-center gap-2" style="background-color: #A8C0B4;">
+                FALE CONOSCO NO WHATSAPP AGORA!
             </a>
-            <a href="#servicos" class="border border-white/30 text-white px-9 py-3.5 rounded-full text-sm font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-white hover:text-[#2e3f47] flex items-center justify-center">
-                Ver Serviços
+            <a href="#servicos" class="border border-white/40 text-white px-10 py-4 rounded-full font-normal uppercase tracking-widest hover:bg-white hover:text-[#2e3f47] transition-all">
+                VER SERVIÇOS
             </a>
         </div>
     </div>
 </section>
 
-        <!-- ========== SOBRE ========== -->
-       <section id="sobre" class="py-20 bg-white">
+   <!-- ========== SOBRE ========== -->
+<section id="sobre" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         
         <div class="max-w-xl">
             <p class="text-[#445159] uppercase tracking-[0.2em] text-xs font-black mb-3 opacity-80">Quem Somos</p>
-            <h2 class="font-heading text-4xl md:text-5xl font-bold text-[#445159] mb-6 leading-tight">
-    Cuidado com amor <br> e <span class="text-[#A8C0B4]">expertise</span>
-</h2>
-            <p class="text-[#445159]/80 text-lg mb-8 leading-relaxed">
-                O <strong>Centro Veterinário Animal Way</strong> nasceu da paixão pelos animais e do compromisso com a saúde e bem-estar dos seus pets em Maricá.
+            
+            <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-[#445159] mb-6 leading-tight">
+                20 anos de história, <br> confiança e <span class="text-[#A8C0B4]">especialização</span>
+            </h2>
+            
+            <p class="text-[#445159]/80 text-lg mb-10 leading-relaxed">
+                A <strong>Animal Way</strong> é um centro veterinário com referência em ortopedia, com equipe especializada e uma trajetória construída com responsabilidade, técnica e amor pelos animais.
             </p>
             
-            <div class="flex gap-10 mb-10">
-                <div class="text-center md:text-left">
-                    <span class="block text-3xl font-black text-[#A8C0B4]">+500</span>
-                    <span class="text-xs uppercase font-bold text-[#445159]/60 tracking-tighter">Pacientes</span>
-                </div>
-                <div class="text-center md:text-left">
-                    <span class="block text-3xl font-black text-[#A8C0B4]">10+</span>
-                    <span class="text-xs uppercase font-bold text-[#445159]/60 tracking-tighter">Anos</span>
-                </div>
-                <div class="text-center md:text-left">
-                    <span class="block text-3xl font-black text-[#A8C0B4]">5★</span>
-                    <span class="text-xs uppercase font-bold text-[#445159]/60 tracking-tighter">Avaliação</span>
-                </div>
-            </div>
-
             <a href="https://wa.me/5521997297742" 
-   class="inline-flex items-center justify-center gap-2 bg-[#A8C0B4] text-[#2e3f47] px-9 py-3.5 rounded-full text-sm font-bold uppercase tracking-[0.15em] hover:bg-[#2e3f47] hover:text-white transition-all duration-300 shadow-md">
-    Agendar Consulta
+               class="inline-block bg-[#A8C0B4] text-[#2e3f47] px-12 py-4 rounded-full font-black uppercase tracking-widest hover:bg-[#2e3f47] hover:text-white transition-all shadow-md active:scale-95">
+                Fale conosco
             </a>
         </div>
 
         <div class="flex justify-center md:justify-end">
             <div class="w-full max-w-[450px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl">
-                <img src="img/cachorro.jpg" 
-                     alt="Equipe Animal Way" 
+                <img src="img/rato.JPEG" 
+                     alt="Especialização Animal Way" 
                      class="w-full h-full object-cover">
             </div>
         </div>
@@ -162,111 +157,200 @@
 </section>
 
         <!-- ========== SERVIÇOS ========== -->
-        <section id="servicos" class="py-20 lg:py-32" style="background-color: #f0f4f3;">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <p class="uppercase tracking-[0.2em] text-xs font-semibold mb-4" style="color: #2e3f47;">— O que oferecemos</p>
-                    <h2 class="font-heading text-4xl md:text-5xl font-bold text-dark mb-4">
-                        Serviços <span style="color: #2e3f47;">Veterinários</span>
-                    </h2>
-                    <div class="w-10 h-[2px] mx-auto" style="background: linear-gradient(to right, #2e3f47, #a8bfb8);"></div>
-                </div>
+        <section id="servicos" class="py-24 bg-[#f8faf9]">
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+            <p class="text-[#A8C0B4] uppercase tracking-widest text-xs font-black mb-4">— O QUE OFERECEMOS</p>
+            <h2 class="font-heading text-4xl md:text-6xl font-extrabold text-[#2e3f47] leading-tight">
+                Cuidado veterinário completo
+            </h2>
+        </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <div class="service-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-6" style="background-color: #f0f4f3;">🩺</div>
-                        <h3 class="font-heading text-lg font-bold mb-3 text-dark">Consultas Clínicas</h3>
-                        <p class="text-muted text-sm leading-relaxed">Avaliação completa da saúde do seu pet com clínicos experientes.</p>
-                    </div>
-
-                    <div class="service-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-6" style="background-color: #f0f4f3;">💉</div>
-                        <h3 class="font-heading text-lg font-bold mb-3 text-dark">Vacinação</h3>
-                        <p class="text-muted text-sm leading-relaxed">Protocolo vacinal completo e atualizado para cães e gatos.</p>
-                    </div>
-
-                    <div class="service-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-6" style="background-color: #f0f4f3;">🛁</div>
-                        <h3 class="font-heading text-lg font-bold mb-3 text-dark">Banho & Tosa</h3>
-                        <p class="text-muted text-sm leading-relaxed">Estética animal com produtos de alta qualidade e muito carinho.</p>
-                    </div>
-
-                    <div class="service-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-6" style="background-color: #f0f4f3;">🔬</div>
-                        <h3 class="font-heading text-lg font-bold mb-3 text-dark">Exames</h3>
-                        <p class="text-muted text-sm leading-relaxed">Laboratório próprio para resultados rápidos e diagnósticos precisos.</p>
-                    </div>
-
-                    <div class="service-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-6" style="background-color: #f0f4f3;">✂️</div>
-                        <h3 class="font-heading text-lg font-bold mb-3 text-dark">Cirurgias</h3>
-                        <p class="text-muted text-sm leading-relaxed">Centro cirúrgico moderno equipado para procedimentos diversos.</p>
-                    </div>
-
-                    <div class="service-card bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mb-6" style="background-color: #f0f4f3;">💊</div>
-                        <h3 class="font-heading text-lg font-bold mb-3 text-dark">Farmácia Pet</h3>
-                        <p class="text-muted text-sm leading-relaxed">Variedade de medicamentos e produtos para o tratamento do seu pet.</p>
-                    </div>
-
-                </div>
-
-                <div class="text-center mt-14">
-                    <a href="https://wa.me/5521997297742?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
-                       target="_blank"
-                       class="inline-flex items-center justify-center gap-2 text-white px-9 py-3.5 rounded-full text-sm font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:bg-[#A8C0B4] hover:text-[#2e3f47] shadow-lg"
-                       style="background-color: #2e3f47;">
-                        Agendar via WhatsApp
-                    </a>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white p-12 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all border-t-8 border-[#A8C0B4] group">
+                <div class="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">🦴</div>
+                <h3 class="text-xl font-black text-[#2e3f47] mb-4 leading-tight">Ortopedia Veterinária</h3>
+                <p class="text-[#445159]/80 text-sm leading-relaxed">
+                    Tratamentos especializados, diagnósticos precisos e acompanhamento completo para mobilidade e qualidade de vida do seu pet.
+                </p>
             </div>
-        </section>
+
+            <div class="bg-white p-12 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all group mt-4 md:mt-0">
+                <div class="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">🩺</div>
+                <h3 class="text-xl font-black text-[#2e3f47] mb-4 leading-tight">Consultas Clínicas</h3>
+                <p class="text-[#445159]/80 text-sm leading-relaxed">
+                    Atendimento completo com avaliação detalhada e orientação personalizada para a saúde do seu pet.
+                </p>
+            </div>
+
+            <div class="bg-white p-12 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all group mt-4 lg:mt-0">
+                <div class="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">🔬</div>
+                <h3 class="text-xl font-black text-[#2e3f47] mb-4 leading-tight">Exames</h3>
+                <p class="text-[#445159]/80 text-sm leading-relaxed">
+                    Diagnóstico rápido e preciso com estrutura própria, garantindo mais segurança no tratamento.
+                </p>
+            </div>
+
+            <div class="bg-white p-12 rounded-[3rem] shadow-sm hover:shadow-2xl transition-all group mt-4 lg:mt-0">
+                <div class="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">🏥</div>
+                <h3 class="text-xl font-black text-[#2e3f47] mb-4 leading-tight">Cirurgias</h3>
+                <p class="text-[#445159]/80 text-sm leading-relaxed">
+                    Centro cirúrgico equipado e equipe experiente para procedimentos com máxima segurança.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mt-20 text-center">
+            <a href="https://wa.me/5521997297742" 
+               class="inline-flex items-center gap-4 bg-[#2e3f47] text-white px-12 py-5 rounded-full font-black uppercase tracking-widest hover:bg-[#A8C0B4] hover:text-[#2e3f47] transition-all shadow-xl hover:-translate-y-1">
+                Agendar consulta rápida
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== Avaliações ========== -->
+<section id="avaliacoes" class="py-24 bg-[#d4e7df]"> 
+    <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="text-[#A8C0B4] text-xl">✦</span>
+                <p class="text-[#819e92] uppercase tracking-[0.3em] text-xs font-black">O que dizem</p>
+                <span class="text-[#A8C0B4] text-xl">✦</span>
+            </div>
+            <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-[#2e3f47]">
+                Avaliações dos <br>
+                <span class="text-[#819e92] italic font-light">Clientes</span>
+            </h2>
+            <div class="w-16 h-1 bg-[#A8C0B4] mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto">
+            <div class="bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl shadow-[#2e3f47]/5 border border-white text-center relative">
+                
+                <div class="flex justify-center gap-1 mb-8">
+                    <span class="text-[#A8C0B4] text-2xl">★</span>
+                    <span class="text-[#A8C0B4] text-2xl">★</span>
+                    <span class="text-[#A8C0B4] text-2xl">★</span>
+                    <span class="text-[#A8C0B4] text-2xl">★</span>
+                    <span class="text-[#A8C0B4] text-2xl">★</span>
+                </div>
+
+                <blockquote id="testimonial-text" class="text-[#445159] text-lg md:text-xl italic leading-relaxed mb-10 min-h-[100px] transition-all duration-300">
+                    "Foi uma experiência maravilhosa indico esse clínica para tds o pessoal além do doutor são excelentes muito obrigada por tudo e voltarei."
+                </blockquote>
+
+                <p id="testimonial-author" class="text-[#2e3f47] font-black uppercase tracking-widest text-sm transition-all duration-300">
+                    — Ana Paula
+                </p>
+            </div>
+
+            <button onclick="prevTestimonial()" class="absolute left-[-15px] md:left-[-60px] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#A8C0B4] hover:bg-[#2e3f47] hover:text-white transition-all z-20">
+                <span class="text-2xl">❮</span>
+            </button>
+            <button onclick="nextTestimonial()" class="absolute right-[-15px] md:right-[-60px] top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center text-[#A8C0B4] hover:bg-[#2e3f47] hover:text-white transition-all z-20">
+                <span class="text-2xl">❯</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Dados fiéis aos prints que você enviou
+    const testimonials = [
+        {
+            text: '"Foi uma experiência maravilhosa indico esse clínica para tds o pessoal além do doutor são excelentes muito obrigada por tudo e voltarei."',
+            author: "— Ana Paula"
+        },
+        {
+            text: '"Simplesmente o melhor atendimento que eu já tive em uma clínica veterinária. Tratam o seu pet com todo amor, carinho e cuidado, não confiaria os meus bichinhos a nenhum outro vet!"',
+            author: "— Antonia Fonseca"
+        },
+        {
+            text: '"Ja estive em alguns veterinários em Maricá e graças a Deus encontrei o Dr. Fernando. Sempre muito profissional, atencioso, paciente, cuidadoso e com bom humor. O Dr. Fernando é o único médico que me passa calma e segurança."',
+            author: "— Flavia Guimarães"
+        }
+    ];
+
+    let currentIndex = 0;
+
+    function updateTestimonial() {
+        const textElem = document.getElementById('testimonial-text');
+        const authorElem = document.getElementById('testimonial-author');
+        
+        // Efeito de sumir e aparecer (fade)
+        textElem.style.opacity = 0;
+        authorElem.style.opacity = 0;
+        
+        setTimeout(() => {
+            textElem.innerText = testimonials[currentIndex].text;
+            authorElem.innerText = testimonials[currentIndex].author;
+            textElem.style.opacity = 1;
+            authorElem.style.opacity = 1;
+        }, 200);
+    }
+
+    function nextTestimonial() {
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        updateTestimonial();
+    }
+
+    function prevTestimonial() {
+        currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonial();
+    }
+</script>
 
         <!-- ========== LOCALIZAÇÃO ========== -->
-       <section id="localizacao" class="py-20 bg-[#2e3f47]">
+      <section id="localizacao" class="py-20 bg-[#2e3f47]">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         
         <div>
             <p class="text-[#A8C0B4] uppercase tracking-widest text-sm font-bold mb-3">Contato e Localização</p>
-            <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-white mb-10 leading-tight">
-                Nossa Sede
+            
+            <h2 class="font-heading text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+                Estamos prontos para cuidar do seu pet em Maricá
             </h2>
 
-            <div class="space-y-10">
+            <p class="text-white/70 text-lg mb-10 leading-relaxed">
+                Estrutura completa, fácil acesso e atendimento preparado para receber seu pet com segurança e cuidado.
+            </p>
+
+            <div class="space-y-8">
                 <div class="flex items-start gap-4">
-                    <div class="bg-white/10 p-3 rounded-full">
-                        <span class="text-xl">📍</span>
-                    </div>
+                    <div class="bg-white/10 p-3 rounded-full text-xl">📍</div>
                     <div>
                         <p class="text-white/50 uppercase text-xs font-bold tracking-widest mb-1">Endereço</p>
-                        <p class="text-white text-lg">Av. Roberto Silveira, 2125 — Flamengo, Maricá - RJ</p>
+                        <p class="text-white text-lg font-medium">Av. Roberto Silveira, 2125 — Flamengo, Maricá - RJ</p>
                     </div>
                 </div>
 
                 <div class="flex items-start gap-4">
-                    <div class="bg-white/10 p-3 rounded-full">
-                        <span class="text-xl">📞</span>
-                    </div>
+                    <div class="bg-white/10 p-3 rounded-full text-xl">📞</div>
                     <div>
-                        <p class="text-white/50 uppercase text-xs font-bold tracking-widest mb-1">Telefone</p>
-                        <p class="text-white text-lg">(21) 3731-3569 | (21) 99729-7742</p>
+                        <p class="text-white/50 uppercase text-xs font-bold tracking-widest mb-1">Telefone / WhatsApp</p>
+                        <p class="text-white text-lg font-medium">(21) 3731-3569 | (21) 99729-7742</p>
                     </div>
                 </div>
             </div>
 
-            <a href="https://wa.me/5521997297742" class="inline-flex items-center justify-center gap-2 bg-[#A8C0B4] text-[#2e3f47] px-9 py-3.5 rounded-full text-sm font-bold uppercase tracking-[0.15em] mt-12 hover:bg-white transition-all duration-300 shadow-xl">
-                Agendar via WhatsApp
+            <a href="https://wa.me/5521997297742" 
+               class="inline-flex items-center gap-3 bg-[#A8C0B4] text-[#2e3f47] px-10 py-5 rounded-full font-black uppercase tracking-widest mt-12 hover:scale-105 transition-all shadow-xl">
+                Fale conosco agora
             </a>
         </div>
 
         <div class="relative group">
             <div class="absolute -inset-1 bg-[#A8C0B4]/20 rounded-[2.6rem] blur-xl opacity-50 group-hover:opacity-100 transition duration-1000"></div>
-            
             <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-[3px] border-[#A8C0B4]/30 bg-[#2e3f47] p-2">
                 <div class="rounded-[1.8rem] overflow-hidden border-2 border-white/10 aspect-video md:aspect-square lg:aspect-video">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.238612143!2d-42.8222!3d-22.9188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU1JzA3LjciUyA0MsKwNDknMTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1711900000000!5m2!1spt-BR!2sbr" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.123456789!2d-42.8123456789!3d-22.9123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzQ0LjQiUyA0MsKwNDgnNDQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890" 
                         class="w-full h-full border-0 grayscale-[0.2] contrast-[1.1]" 
                         allowfullscreen="" 
                         loading="lazy">
@@ -280,6 +364,33 @@
 
     </main>
 
+     <!-- ========== ALERTA DE EMERGÊNCIA ========== -->
+    <section id="emergencia" class="py-16 bg-[#A8C0B4] scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        
+        <div class="max-w-2xl">
+            <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-700"></span>
+                </span>
+                <h2 class="text-[#2e3f47] font-black uppercase tracking-widest text-sm">Atendimento de emergência 24h</h2>
+            </div>
+            <h3 class="font-heading text-3xl md:text-4xl font-black text-[#2e3f47] leading-tight">
+                Seu pet precisa de ajuda agora? <br>
+                <span class="text-white">Fale com nossa equipe imediatamente.</span>
+            </h3>
+        </div>
+
+        <div>
+            <a href="tel:21997297742" class="inline-flex items-center gap-4 bg-[#2e3f47] text-white px-12 py-6 rounded-full font-black uppercase tracking-[0.15em] hover:bg-white hover:text-[#2e3f47] transition-all shadow-2xl scale-110">
+                entre em contato agora
+            </a>
+        </div>
+
+    </div>
+</section>
+
     <!-- ========== FOOTER ========== -->
    <footer class="py-16" style="background-color: #f0f4f3;">
     <div class="max-w-7xl mx-auto px-6">
@@ -287,34 +398,35 @@
             
             <div class="flex flex-col gap-4">
                 <img src="img/logo.png" alt="Logo Animal Way" class="h-16 w-auto object-contain self-start opacity-90">
-                <p class="text-[#445159] text-sm leading-relaxed max-w-xs">
-                    Cuidado especializado e carinhoso para o seu pet em Maricá. Sua confiança é o nosso compromisso.
+                <p class="text-[#445159] text-sm leading-relaxed max-w-sm">
+                    Há mais de 20 anos em Maricá, a <strong>Animal Way</strong> é referência em cuidado veterinário e ortopedia, oferecendo atendimento completo com confiança e responsabilidade.
                 </p>
+                <div class="flex items-center gap-2 text-[#445159] text-xs font-bold uppercase tracking-wider mt-2">
+                    <span>-></span> Estacionamento próprio no local
+                </div>
             </div>
 
             <div>
-                <h4 class="text-[#445159] font-black uppercase tracking-widest text-sm mb-6">Links</h4>
+                <h4 class="text-[#445159] font-black uppercase tracking-widest text-sm mb-6">Navegação</h4>
                 <ul class="space-y-3">
-                    <li><a href="#sobre" class="text-[#445159] hover:text-[#A8C0B4] transition-colors font-medium text-sm">Sobre</a></li>
-                    <li><a href="#servicos" class="text-[#445159] hover:text-[#A8C0B4] transition-colors font-medium text-sm">Serviços</a></li>
+                    <li><a href="#sobre" class="text-[#445159] hover:text-[#A8C0B4] transition-colors font-medium text-sm">Nossa História</a></li>
+                    <li><a href="#servicos" class="text-[#445159] hover:text-[#A8C0B4] transition-colors font-medium text-sm">Serviços Especializados</a></li>
                     <li><a href="#localizacao" class="text-[#445159] hover:text-[#A8C0B4] transition-colors font-medium text-sm">Localização</a></li>
-                    <li><a href="#contato" class="text-[#445159] hover:text-[#A8C0B4] transition-colors font-medium text-sm">Contato</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-[#445159] font-black uppercase tracking-widest text-sm mb-6">Emergência</h4>
-                <p class="text-[#445159] text-sm mb-2 font-medium">Atendimento 24h para casos urgentes.</p>
-                <a href="tel:21997297742" class="text-xl font-black text-[#89a89a] hover:text-[#445159] transition-colors">
+                <h4 class="text-[#445159] font-black uppercase tracking-widest text-sm mb-6">Contato Direto</h4>
+                <p class="text-[#445159] text-sm mb-4 font-medium italic italic">Av. Roberto Silveira, 2125 — Flamengo, Maricá</p>
+                <a href="https://wa.me/5521997297742" class="text-xl font-black text-[#89a89a] hover:text-[#445159] transition-colors">
                     (21) 99729-7742
                 </a>
             </div>
-
         </div>
 
         <div class="pt-8 border-t border-[#445159]/10 text-center">
             <p class="text-[#445159]/60 text-xs uppercase tracking-[0.2em] font-bold">
-                © 2026 Centro Veterinário Animal Way. Todos os direitos reservados.
+                © 2026 CENTRO VETERINÁRIO ANIMAL WAY. MARICÁ - RJ.
             </p>
         </div>
     </div>
